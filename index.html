@@ -1,28 +1,45 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Patrick Hand' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-button {
-      font-family: 'Arial', sans-serif;
-      font-size: 16px;
-      color: white;
-      background-color: #007BFF;
-      border: none;
-      border-radius: 50%;
-      padding: 10px 10px;
-      margin: 5px;
-      cursor: pointer;
-    }
+    button {
+        font-family: 'Patrick Hand';
+        font-size: 20px;
+        color: white;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 50%;
+        padding: 10px 10px;
+        margin: 5px;
+        cursor: pointer;
+        }
+        
+        #start-button {
+        background-color: #9165ab; /* Green */
+        }
 
-    button:hover {
-      background-color: #0056b3;
-    }
+        #start-button:hover {
+        background-color: #7e5899; /* Darker green */
+        }
 
-    
-    #start-button { background-color: #28a745; }
-    #stop-button { background-color: #dc3545; }
-    #reset-button { background-color: #ffc107; }
+        #stop-button {
+        background-color: #9165ab; /* Red */
+        }
+
+        #stop-button:hover {
+        background-color: #7e5899; /* Darker red */
+        }
+
+        #reset-button {
+        background-color: #9165ab; /* Yellow */
+        }
+
+        #reset-button:hover {
+        background-color: #7e5899; /* Darker yellow */
+        }
+
 </style>
 </head>
 <body>
@@ -34,9 +51,9 @@ button {
 document.body.innerHTML = `
   <div style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px;">
     <h1 id="timer-display">02:00</h1>
-    <button id="start-button">Start</button>
-    <button id="stop-button">Stop</button>
-    <button id="reset-button">Reset</button>
+    <button id="start-button"><img src="play.svg" width="25px" height="20px"></button>
+    <button id="stop-button"><img src="pause.svg" width="25px" height="20px"></button>
+    <button id="reset-button"><img src="reset.svg" width="25px" height="20px"></button>
   </div>
 `;
 
